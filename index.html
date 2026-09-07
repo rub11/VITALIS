@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VITALIS – Saúde mais simples. Cuidado mais humano.</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet" />
+
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- ============================================================
+    HEADER / NAVBAR
+    ============================================================ -->
+    <header class="header" id="header">
+        <div class="container header__container">
+            <a href="#" class="logo">VITALIS</a>
+
+            <nav class="nav" id="nav">
+                <ul class="nav__list">
+                    <li><a href="#hero" class="nav__link active">Início</a></li>
+                    <li><a href="#sobre" class="nav__link">Sobre</a></li>
+                    <li><a href="#especialidades" class="nav__link">Especialidades</a></li>
+                    <li><a href="#equipe" class="nav__link">Equipe</a></li>
+                    <li><a href="#estrutura" class="nav__link">Estrutura</a></li>
+                    <li><a href="#depoimentos" class="nav__link">Depoimentos</a></li>
+                    <li><a href="#blog" class="nav__link">Blog</a></li>
+                    <li><a href="#contato" class="nav__link">Contato</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__actions">
+                <a href="#agendamento" class="btn btn--primary btn--sm">Agendar consulta</a>
+                <button class="hamburger" id="hamburger" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ============================================================
+        HERO
+        ============================================================ -->
+        <section class="hero" id="hero">
+            <div class="container hero__container">
+                <div class="hero__content">
+                    <h1 class="hero__title">
+                        Saúde mais simples.<br />
+                        <span class="hero__title--accent">Cuidado mais humano.</span>
+                    </h1>
+                    <p class="hero__text">
+                        Conte com especialistas, tecnologia e atendimento personalizado
+                        para cuidar da sua saúde em todas as fases da sua jornada.
+                    </p>
+                    <div class="hero__buttons">
+                        <a href="#agendamento" class="btn btn--primary">Agendar consulta</a>
+                        <a href="#sobre" class="btn btn--outline">Conhecer a clínica</a>
+                    </div>
+                </div>
+
+                <div class="hero__image-wrapper">
+                    <div class="hero__image-card">
+                        <img
+                        src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=800&h=600&fit=crop&crop=center"
+                        alt="Equipe de profissionais da saúde VITALIS"
+                        class="hero__image"
+                        />
+                        <!-- badges flutuantes -->
+                        <div class="badge badge--1">
+                            <span class="badge__icon">★</span> 4.9/5
+                        </div>
+                        <div class="badge badge--2">
+                            <span class="badge__icon">👤</span> +5.000 pacientes
+                        </div>
+                        <div class="badge badge--3">
+                            <span class="badge__icon">❤️</span> Atendimento humanizado
+                        </div>
+                    </div>
+                    <!-- grid sutil no fundo do hero (via CSS) -->
+                </div>
+            </div>
+            <div class="hero__grid-bg"></div>
+        </section>
+
+        <!-- ============================================================
+        NÚMEROS
+        ============================================================ -->
+        <section class="numbers" id="numbers">
+            <div class="container numbers__container">
+                <div class="number-item">
+                    <span class="number-item__value" data-count="5000">0</span>
+                    <span class="number-item__label">Pacientes atendidos</span>
+                </div>
+                <div class="number-item">
+                    <span class="number-item__value" data-count="15">0</span>
+                    <span class="number-item__label">Especialistas</span>
+                </div>
+                <div class="number-item">
+                    <span class="number-item__value" data-count="98">0</span>
+                    <span class="number-item__label">% Satisfação</span>
+                </div>
+                <div class="number-item">
+                    <span class="number-item__value" data-count="10">0</span>
+                    <span class="number-item__label">+ Anos de experiência</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        ESPECIALIDADES
+        ============================================================ -->
+        <section class="specialties" id="especialidades">
+            <div class="container specialties__container">
+                <div class="section-header">
+                    <h2 class="section-title">Cuidados para cada fase da sua vida</h2>
+                    <p class="section-subtitle">Conheça nossas especialidades</p>
+                </div>
+                <div class="specialties__grid">
+                    <!-- Card 1 -->
+                    <div class="specialty-card">
+                        <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=400&h=300&fit=crop&crop=center" alt="Clínica Médica" class="specialty-card__img" />
+                        <div class="specialty-card__body">
+                            <h3 class="specialty-card__title">Clínica Médica</h3>
+                            <p class="specialty-card__desc">Diagnóstico e tratamento de diversas condições.</p>
+                            <a href="#" class="specialty-card__link">Conhecer →</a>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="specialty-card">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop&crop=center" alt="Nutrição" class="specialty-card__img" />
+                        <div class="specialty-card__body">
+                            <h3 class="specialty-card__title">Nutrição</h3>
+                            <p class="specialty-card__desc">Alimentação equilibrada para sua saúde.</p>
+                            <a href="#" class="specialty-card__link">Conhecer →</a>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="specialty-card">
+                        <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=400&h=300&fit=crop&crop=center" alt="Psicologia" class="specialty-card__img" />
+                        <div class="specialty-card__body">
+                            <h3 class="specialty-card__title">Psicologia</h3>
+                            <p class="specialty-card__desc">Apoio emocional e saúde mental.</p>
+                            <a href="#" class="specialty-card__link">Conhecer →</a>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="specialty-card">
+                        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=400&h=300&fit=crop&crop=center" alt="Fisioterapia" class="specialty-card__img" />
+                        <div class="specialty-card__body">
+                            <h3 class="specialty-card__title">Fisioterapia</h3>
+                            <p class="specialty-card__desc">Reabilitação e movimento funcional.</p>
+                            <a href="#" class="specialty-card__link">Conhecer →</a>
+                        </div>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="specialty-card">
+                        <img src="https://images.unsplash.com/photo-1628603683050-fded99b75596?w=400&h=300&fit=crop&crop=center" alt="Cardiologia" class="specialty-card__img" />
+                        <div class="specialty-card__body">
+                            <h3 class="specialty-card__title">Cardiologia</h3>
+                            <p class="specialty-card__desc">Cuidados com o coração e circulação.</p>
+                            <a href="#" class="specialty-card__link">Conhecer →</a>
+                        </div>
+                    </div>
+                    <!-- Card 6 -->
+                    <div class="specialty-card">
+                        <img src="https://images.unsplash.com/photo-1599447421416-3414500d18a5?w=400&h=300&fit=crop&crop=center" alt="Dermatologia" class="specialty-card__img" />
+                        <div class="specialty-card__body">
+                            <h3 class="specialty-card__title">Dermatologia</h3>
+                            <p class="specialty-card__desc">Cuidados com a pele e estética.</p>
+                            <a href="#" class="specialty-card__link">Conhecer →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        SOBRE
+        ============================================================ -->
+        <section class="about" id="sobre">
+            <div class="container about__container">
+                <div class="about__image">
+                    <img src="https://images.unsplash.com/photo-1585123334904-845d60e6b47b?w=600&h=500&fit=crop&crop=center" alt="Espaço moderno da clínica VITALIS" />
+                </div>
+                <div class="about__content">
+                    <h2 class="about__title">Mais do que uma clínica.<br /><span>Um espaço para cuidar de você.</span></h2>
+                    <p class="about__text">
+                        A VITALIS une tecnologia de ponta, profissionais especializados e
+                        atendimento humanizado para proporcionar uma experiência única em
+                        saúde. Cada detalhe foi pensado para seu bem-estar.
+                    </p>
+                    <ul class="about__features">
+                        <li><span>✓</span> Atendimento humanizado</li>
+                        <li><span>✓</span> Profissionais especializados</li>
+                        <li><span>✓</span> Tecnologia moderna</li>
+                        <li><span>✓</span> Ambiente confortável</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        COMO FUNCIONA
+        ============================================================ -->
+        <section class="how-it-works" id="funciona">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Seu cuidado começa em poucos passos.</h2>
+                    <p class="section-subtitle">Simples, rápido e transparente</p>
+                </div>
+                <div class="steps">
+                    <div class="step">
+                        <span class="step__number">01</span>
+                        <h3 class="step__title">Escolha sua especialidade</h3>
+                        <p class="step__desc">Encontre a área que atende sua necessidade.</p>
+                    </div>
+                    <div class="step">
+                        <span class="step__number">02</span>
+                        <h3 class="step__title">Escolha seu profissional</h3>
+                        <p class="step__desc">Conheça nossos especialistas e suas abordagens.</p>
+                    </div>
+                    <div class="step">
+                        <span class="step__number">03</span>
+                        <h3 class="step__title">Agende seu horário</h3>
+                        <p class="step__desc">Marque sua consulta no melhor dia e horário.</p>
+                    </div>
+                    <div class="step">
+                        <span class="step__number">04</span>
+                        <h3 class="step__title">Comece seu acompanhamento</h3>
+                        <p class="step__desc">Inicie sua jornada de cuidado conosco.</p>
+                    </div>
+                </div>
+                <div class="steps__line"></div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        EQUIPE
+        ============================================================ -->
+        <section class="team" id="equipe">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Conheça nossos especialistas</h2>
+                    <p class="section-subtitle">Profissionais dedicados ao seu cuidado</p>
+                </div>
+                <div class="team__grid">
+                    <div class="team-card">
+                        <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=400&h=400&fit=crop&crop=center" alt="Dra. Ana Martins" class="team-card__img" />
+                        <h3 class="team-card__name">Dra. Ana Martins</h3>
+                        <p class="team-card__specialty">Clínica Médica</p>
+                        <p class="team-card__crm">CRM/SP 12345</p>
+                        <div class="team-card__social">
+                            <a href="#"><span class="social-icon">in</span></a>
+                            <a href="#"><span class="social-icon">ig</span></a>
+                        </div>
+                    </div>
+                    <div class="team-card">
+                        <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&h=400&fit=crop&crop=center" alt="Dr. Lucas Almeida" class="team-card__img" />
+                        <h3 class="team-card__name">Dr. Lucas Almeida</h3>
+                        <p class="team-card__specialty">Cardiologia</p>
+                        <p class="team-card__crm">CRM/SP 67890</p>
+                        <div class="team-card__social">
+                            <a href="#"><span class="social-icon">in</span></a>
+                            <a href="#"><span class="social-icon">ig</span></a>
+                        </div>
+                    </div>
+                    <div class="team-card">
+                        <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=400&h=400&fit=crop&crop=center" alt="Dra. Mariana Costa" class="team-card__img" />
+                        <h3 class="team-card__name">Dra. Mariana Costa</h3>
+                        <p class="team-card__specialty">Nutrição</p>
+                        <p class="team-card__crm">CRM/SP 13579</p>
+                        <div class="team-card__social">
+                            <a href="#"><span class="social-icon">in</span></a>
+                            <a href="#"><span class="social-icon">ig</span></a>
+                        </div>
+                    </div>
+                    <div class="team-card">
+                        <img src="https://images.unsplash.com/photo-1544716278-e513176f20b5?w=400&h=400&fit=crop&crop=center" alt="Dra. Beatriz Santos" class="team-card__img" />
+                        <h3 class="team-card__name">Dra. Beatriz Santos</h3>
+                        <p class="team-card__specialty">Psicologia</p>
+                        <p class="team-card__crm">CRM/SP 24680</p>
+                        <div class="team-card__social">
+                            <a href="#"><span class="social-icon">in</span></a>
+                            <a href="#"><span class="social-icon">ig</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        ESTRUTURA (GALERIA)
+        ============================================================ -->
+        <section class="structure" id="estrutura">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Um ambiente pensado para você</h2>
+                    <p class="section-subtitle">Espaços que acolhem e cuidam</p>
+                </div>
+                <div class="structure__gallery">
+                    <div class="structure__item structure__item--large">
+                        <img src="https://images.unsplash.com/photo-1585123334904-845d60e6b47b?w=800&h=600&fit=crop&crop=center" alt="Recepção" />
+                        <span class="structure__label">Recepção</span>
+                    </div>
+                    <div class="structure__item">
+                        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400&h=300&fit=crop&crop=center" alt="Consultório" />
+                        <span class="structure__label">Consultórios</span>
+                    </div>
+                    <div class="structure__item">
+                        <img src="https://images.unsplash.com/photo-1581056771107-24ca5f033842?w=400&h=300&fit=crop&crop=center" alt="Sala de atendimento" />
+                        <span class="structure__label">Sala de atendimento</span>
+                    </div>
+                    <div class="structure__item">
+                        <img src="https://images.unsplash.com/photo-1581056771107-24ca5f033842?w=400&h=300&fit=crop&crop=center" alt="Equipamentos" />
+                        <span class="structure__label">Equipamentos</span>
+                    </div>
+                    <div class="structure__item">
+                        <img src="https://images.unsplash.com/photo-1585123334904-845d60e6b47b?w=400&h=300&fit=crop&crop=center" alt="Área de espera" />
+                        <span class="structure__label">Área de espera</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        DEPOIMENTOS (CAROUSEL)
+        ============================================================ -->
+        <section class="testimonials" id="depoimentos">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">O cuidado que nossos pacientes sentem.</h2>
+                    <p class="section-subtitle">Histórias reais de quem confia na VITALIS</p>
+                </div>
+                <div class="testimonials__carousel">
+                    <div class="testimonials__track" id="testimonialsTrack">
+                        <!-- Card 1 -->
+                        <div class="testimonial-card">
+                            <div class="testimonial-card__top">
+                                <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=80&h=80&fit=crop&crop=face" alt="Carlos Souza" />
+                                <div>
+                                    <h4>Carlos Souza</h4>
+                                    <div class="stars">★★★★★</div>
+                                </div>
+                            </div>
+                            <p class="testimonial-card__text">“Atendimento impecável, equipe muito atenciosa. A VITALIS realmente se importa com os pacientes.”</p>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="testimonial-card">
+                            <div class="testimonial-card__top">
+                                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop&crop=face" alt="Mariana Oliveira" />
+                                <div>
+                                    <h4>Mariana Oliveira</h4>
+                                    <div class="stars">★★★★★</div>
+                                </div>
+                            </div>
+                            <p class="testimonial-card__text">“Profissionais excelentes, estrutura moderna. Me sinto segura e bem cuidada.”</p>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="testimonial-card">
+                            <div class="testimonial-card__top">
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face" alt="Rafael Lima" />
+                                <div>
+                                    <h4>Rafael Lima</h4>
+                                    <div class="stars">★★★★★</div>
+                                </div>
+                            </div>
+                            <p class="testimonial-card__text">“A melhor experiência em saúde que já tive. Recomendo a todos.”</p>
+                        </div>
+                        <!-- Card 4 -->
+                        <div class="testimonial-card">
+                            <div class="testimonial-card__top">
+                                <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=80&h=80&fit=crop&crop=face" alt="Patrícia Mendes" />
+                                <div>
+                                    <h4>Patrícia Mendes</h4>
+                                    <div class="stars">★★★★★</div>
+                                </div>
+                            </div>
+                            <p class="testimonial-card__text">“Atendimento humanizado e tecnologia de ponta. A VITALIS é referência.”</p>
+                        </div>
+                    </div>
+                    <div class="testimonials__controls">
+                        <button class="carousel-btn carousel-btn--prev" id="prevBtn">‹</button>
+                        <button class="carousel-btn carousel-btn--next" id="nextBtn">›</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        AGENDAMENTO + FORMULÁRIO
+        ============================================================ -->
+        <section class="appointment" id="agendamento">
+            <div class="container appointment__container">
+                <div class="appointment__content">
+                    <h2 class="appointment__title">Seu próximo passo começa aqui.</h2>
+                    <p class="appointment__text">Preencha os dados e agende sua consulta. Nossa equipe entrará em contato em breve.</p>
+                    <form class="appointment__form" id="appointmentForm">
+                        <div class="form-group">
+                            <input type="text" id="nome" placeholder="Nome completo" required />
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="E-mail" required />
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="telefone" placeholder="Telefone" required />
+                        </div>
+                        <div class="form-group">
+                            <select id="especialidade">
+                                <option value="">Selecione a especialidade</option>
+                                <option value="clinica">Clínica Médica</option>
+                                <option value="nutricao">Nutrição</option>
+                                <option value="psicologia">Psicologia</option>
+                                <option value="fisioterapia">Fisioterapia</option>
+                                <option value="cardiologia">Cardiologia</option>
+                                <option value="dermatologia">Dermatologia</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <select id="profissional">
+                                <option value="">Selecione o profissional</option>
+                                <option value="ana">Dra. Ana Martins</option>
+                                <option value="lucas">Dr. Lucas Almeida</option>
+                                <option value="mariana">Dra. Mariana Costa</option>
+                                <option value="beatriz">Dra. Beatriz Santos</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="date" id="data" required />
+                        </div>
+                        <div class="form-group">
+                            <textarea id="mensagem" placeholder="Mensagem (opcional)"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full">Solicitar agendamento</button>
+                    </form>
+                    <div id="formSuccess" class="form-success hidden">
+                        <p>✅ Agendamento solicitado com sucesso! Entraremos em contato em breve.</p>
+                    </div>
+                    <div class="appointment__whatsapp">
+                        <p>Ou agende diretamente pelo WhatsApp:</p>
+                        <a href="#" class="btn btn--whatsapp" id="whatsappBtn">Agendar pelo WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        BLOG
+        ============================================================ -->
+        <section class="blog" id="blog">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Conteúdos para cuidar melhor de você</h2>
+                    <p class="section-subtitle">Dicas e informações relevantes</p>
+                </div>
+                <div class="blog__grid">
+                    <article class="blog-card">
+                        <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=400&h=250&fit=crop&crop=center" alt="Hábitos saudáveis" />
+                        <span class="blog-card__category">Bem-estar</span>
+                        <h3 class="blog-card__title">5 hábitos para melhorar sua qualidade de vida</h3>
+                        <p class="blog-card__date">15/03/2026</p>
+                        <a href="#" class="blog-card__link">Ler artigo →</a>
+                    </article>
+                    <article class="blog-card">
+                        <img src="https://images.unsplash.com/photo-1628603683050-fded99b75596?w=400&h=250&fit=crop&crop=center" alt="Cardiologia" />
+                        <span class="blog-card__category">Cardiologia</span>
+                        <h3 class="blog-card__title">Quando procurar um cardiologista?</h3>
+                        <p class="blog-card__date">10/03/2026</p>
+                        <a href="#" class="blog-card__link">Ler artigo →</a>
+                    </article>
+                    <article class="blog-card">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=250&fit=crop&crop=center" alt="Nutrição" />
+                        <span class="blog-card__category">Nutrição</span>
+                        <h3 class="blog-card__title">Como funciona uma avaliação nutricional?</h3>
+                        <p class="blog-card__date">05/03/2026</p>
+                        <a href="#" class="blog-card__link">Ler artigo →</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        FAQ
+        ============================================================ -->
+        <section class="faq" id="faq">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Perguntas frequentes</h2>
+                    <p class="section-subtitle">Tire suas dúvidas sobre a VITALIS</p>
+                </div>
+                <div class="faq__list">
+                    <div class="faq-item">
+                        <button class="faq-item__question">A clínica atende convênios? <span class="faq-item__icon">+</span></button>
+                        <div class="faq-item__answer">
+                            <p>Sim, a VITALIS atende diversos convênios. Entre em contato para verificar a rede credenciada.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-item__question">Como faço para agendar? <span class="faq-item__icon">+</span></button>
+                        <div class="faq-item__answer">
+                            <p>Você pode agendar pelo formulário em nosso site, pelo WhatsApp ou telefonando para nossa central.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-item__question">Vocês realizam atendimento online? <span class="faq-item__icon">+</span></button>
+                        <div class="faq-item__answer">
+                            <p>Sim, oferecemos telemedicina para consultas online em diversas especialidades.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-item__question">Quais especialidades estão disponíveis? <span class="faq-item__icon">+</span></button>
+                        <div class="faq-item__answer">
+                            <p>Clínica Médica, Nutrição, Psicologia, Fisioterapia, Cardiologia e Dermatologia.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-item__question">Posso cancelar minha consulta? <span class="faq-item__icon">+</span></button>
+                        <div class="faq-item__answer">
+                            <p>Sim, você pode cancelar com até 24 horas de antecedência para reembolso total.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+        CTA FINAL
+        ============================================================ -->
+        <section class="cta-final">
+            <div class="container cta-final__container">
+                <h2 class="cta-final__title">Cuide hoje da saúde que acompanha o seu amanhã.</h2>
+                <p class="cta-final__text">Agende seu atendimento e dê o primeiro passo para uma rotina mais saudável.</p>
+                <a href="#agendamento" class="btn btn--primary btn--large">Agendar consulta</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ============================================================
+    FOOTER
+    ============================================================ -->
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__col">
+                <a href="#" class="logo">VITALIS</a>
+                <p class="footer__slogan">"Saúde mais simples. Cuidado mais humano."</p>
+                <div class="footer__social">
+                    <a href="#" aria-label="Instagram">IG</a>
+                    <a href="#" aria-label="Facebook">FB</a>
+                    <a href="#" aria-label="LinkedIn">IN</a>
+                </div>
+            </div>
+            <div class="footer__col">
+                <h4>Links rápidos</h4>
+                <ul>
+                    <li><a href="#hero">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#especialidades">Especialidades</a></li>
+                    <li><a href="#equipe">Equipe</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4>Especialidades</h4>
+                <ul>
+                    <li>Clínica Médica</li>
+                    <li>Nutrição</li>
+                    <li>Psicologia</li>
+                    <li>Fisioterapia</li>
+                    <li>Cardiologia</li>
+                    <li>Dermatologia</li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4>Contato</h4>
+                <ul>
+                    <li>📞 (11) 99999-9999</li>
+                    <li>📱 (11) 99999-8888</li>
+                    <li>✉️ contato@vitalis.com.br</li>
+                    <li>📍 Rua da Saúde, 123 – São Paulo</li>
+                    <li>🕒 Seg–Sex: 08h–20h | Sáb: 08h–14h</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container footer__bottom-container">
+                <p>© 2026 VITALIS. Todos os direitos reservados.</p>
+                <div>
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
